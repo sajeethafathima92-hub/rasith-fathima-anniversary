@@ -1282,5 +1282,331 @@ font-size: 38px;
     opacity: 1;
     transform: translateY(-20px);
 }
+/* =====================================
+   PREMIUM MOBILE RESPONSIVE DESIGN
+   Laptop Design Remains Unchanged
+===================================== */
 
+@media screen and (max-width: 600px) {
+
+    /* Main Page */
+
+    html, body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    body {
+        font-size: 14px;
+    }
+
+    /* Hero Section */
+
+    .hero {
+        width: 100%;
+        min-height: 100vh;
+        padding: 25px 14px;
+        overflow: hidden;
+    }
+
+    .hero .subtitle {
+        font-size: 11px;
+        letter-spacing: 2px;
+        line-height: 1.8;
+        margin-bottom: 20px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+        line-height: 1.4;
+        overflow-wrap: break-word;
+    }
+
+    .hero h2 {
+        font-size: 22px;
+        line-height: 1.5;
+    }
+
+    .hero .date {
+        font-size: 14px;
+        letter-spacing: 3px;
+        margin: 18px 0;
+    }
+
+    .hero .message {
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
+    button {
+        max-width: 100%;
+        font-size: 14px;
+        padding: 12px 22px;
+    }
+
+    /* Cover Photo */
+
+    .cover-image {
+        width: 100% !important;
+        max-width: 400px;
+        height: auto !important;
+        margin: 15px auto !important;
+    }
+
+    /* Album Opening Cover */
+
+    .album-intro {
+        padding: 12px;
+    }
+
+    .album-cover {
+        width: 100%;
+        max-width: 420px;
+        height: min(520px, calc(100vh - 30px));
+        height: min(520px, calc(100svh - 30px));
+        min-height: 340px;
+    }
+
+    .album-cover img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .album-text {
+        padding: 15px;
+        padding-bottom: 25px;
+    }
+
+    .album-text h1 {
+        font-size: clamp(25px, 7vw, 34px);
+        line-height: 1.4;
+    }
+
+    .album-text p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .album-text button {
+        font-size: 13px;
+        padding: 11px 20px;
+    }
+
+    /* Wedding Video */
+
+    .wedding-video {
+        width: 100%;
+        max-width: 100%;
+        margin: 30px auto;
+        padding: 30px 15px;
+        border-radius: 18px;
+    }
+
+    .wedding-video h2 {
+        font-size: 24px;
+        line-height: 1.5;
+    }
+
+    .wedding-video p {
+        font-size: 14px;
+        line-height: 1.8;
+        margin-bottom: 20px;
+    }
+
+    .wedding-video video {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        max-height: none;
+        border-width: 3px;
+        border-radius: 14px;
+    }
+
+    /* Greeting Envelopes */
+
+    .envelope-section {
+        width: 100%;
+        max-width: 100%;
+        margin: 30px auto;
+        padding: 30px 12px;
+        border-radius: 18px;
+    }
+
+    .envelope-section h2 {
+        font-size: 24px;
+        line-height: 1.5;
+    }
+
+    .envelope-section p {
+        font-size: 13px;
+        line-height: 1.8;
+    }
+
+    .envelope-container {
+        width: 100%;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 25px 12px;
+        margin: 30px auto;
+    }
+
+    .message-envelope {
+        width: 100%;
+        min-width: 0;
+        height: 145px;
+    }
+
+    .envelope-message {
+        font-size: 12px;
+        line-height: 1.5;
+    }
+
+    /* Anniversary Gallery */
+
+    .gallery {
+        width: calc(100% - 20px);
+        max-width: 100%;
+        margin: 30px auto;
+        padding: 30px 12px;
+        border-radius: 18px;
+    }
+
+    .gallery h2 {
+        font-size: 26px;
+        line-height: 1.5;
+    }
+
+    .gallery-subtitle {
+        font-size: 13px;
+        line-height: 1.8;
+        margin-bottom: 25px;
+    }
+
+    .gallery-container {
+        width: 100%;
+        max-width: 100%;
+        columns: 2;
+        column-gap: 10px;
+    }
+
+    .gallery-container img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 12px;
+        border-radius: 12px;
+        break-inside: avoid;
+    }
+
+    /* Beautiful Dua */
+
+    .love-message {
+        width: 100%;
+        padding: 35px 12px;
+    }
+
+    .love-card {
+        width: 100%;
+        max-width: 100%;
+        padding: 30px 16px;
+        border-radius: 18px;
+    }
+
+    .dua-title {
+        font-size: 15px;
+        letter-spacing: 2px;
+    }
+
+    .love-card h2 {
+        font-size: 23px;
+        line-height: 1.5;
+    }
+
+    .love-card p {
+        font-size: 14px;
+        line-height: 1.9;
+    }
+
+    .love-card h3 {
+        font-size: 17px;
+        line-height: 1.6;
+    }
+
+    .forever-image {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+
+    .love-card .forever-caption {
+        font-size: 16px;
+    }
+
+    /* Surprise Message */
+
+    #surprise {
+        width: 100%;
+        font-size: 16px;
+        line-height: 1.8;
+    }
+
+    .surprise-hearts {
+        gap: 15px;
+        font-size: 35px;
+    }
+
+    #surprise p {
+        font-size: 14px;
+    }
+
+    /* Wedding Decorations */
+
+    .wedding-doodles span {
+        font-size: 17px;
+        opacity: 0.35;
+    }
+
+    .wedding-doodles span::after {
+        font-size: 7px;
+    }
+
+}
+
+
+/* =====================================
+   SMALL MOBILE SCREENS
+===================================== */
+
+@media screen and (max-width: 380px) {
+
+    .hero h1 {
+        font-size: 27px;
+    }
+
+    .hero .subtitle {
+        font-size: 10px;
+        letter-spacing: 1.5px;
+    }
+
+    .gallery h2 {
+        font-size: 23px;
+    }
+
+    .envelope-section h2 {
+        font-size: 22px;
+    }
+
+    .message-envelope {
+        height: 130px;
+    }
+
+    .album-text h1 {
+        font-size: 25px;
+    }
+
+    .love-card {
+        padding: 25px 13px;
+    }
+
+}
 
