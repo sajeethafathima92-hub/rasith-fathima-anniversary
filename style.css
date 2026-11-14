@@ -1,0 +1,1286 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+}
+
+body {
+
+    font-family: Georgia, serif;
+
+    background: #fffaf3;
+
+    color: #74533c;
+
+}
+
+.hero {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    padding: 30px;
+
+    background: linear-gradient(
+
+        135deg,
+
+        #fffaf3,
+
+        #f5e6d3,
+
+        #fffaf3
+
+    );
+
+}
+
+.subtitle {
+
+    color: #b18a45;
+
+    letter-spacing: 4px;
+
+    font-size: 13px;
+
+    margin-bottom: 30px;
+
+}
+
+h1 {
+
+    font-size: 55px;
+
+    line-height: 1.4;
+
+    color: #805b42;
+
+}
+
+h1 span {
+
+    color: #c5a15d;
+
+    display: block;
+
+}
+
+.date {
+
+    margin: 25px;
+
+    letter-spacing: 5px;
+
+    color: #b18a45;
+
+}
+
+h2 {
+
+    font-size: 32px;
+
+    margin: 15px;
+
+}
+
+.message {
+
+    font-style: italic;
+
+    margin: 15px;
+
+}
+
+button {
+
+    background: #b18a45;
+
+    color: white;
+
+    border: none;
+
+    padding: 15px 30px;
+
+    border-radius: 30px;
+
+    margin-top: 25px;
+
+    cursor: pointer;
+
+    font-size: 15px;
+
+}
+
+button:hover {
+
+    background: #805b42;
+
+    transform: scale(1.05);
+
+}
+
+#surprise {
+
+    margin-top: 25px;
+
+    font-size: 20px;
+
+    color: #a47740;
+
+}
+
+/* Real Rose Petal Animation */
+
+.petals-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 10;
+}
+
+.petal {
+    position: absolute;
+    top: -60px;
+    height: auto;
+    opacity: 0.9;
+    pointer-events: none;
+    animation: falling 8s linear forwards;
+}
+
+@keyframes falling {
+    0% {
+        transform: translate3d(0, -60px, 0) rotate(0deg);
+        opacity: 0;
+    }
+
+    15% {
+        opacity: 1;
+    }
+
+    50% {
+        transform: translate3d(var(--drift), 50vh, 0)
+                   rotate(calc(var(--rotation) / 2));
+    }
+
+    100% {
+        transform: translate3d(
+            calc(var(--drift) * -0.5),
+            110vh,
+            0
+        ) rotate(var(--rotation));
+        opacity: 0;
+    }
+}
+
+.petal {
+
+    position: absolute;
+
+    top: -50px;
+
+    color: #f4a6c1;
+
+    font-size: 22px;
+
+    opacity: 0.8;
+
+    animation: falling 8s linear infinite;
+
+}
+
+@keyframes falling {
+
+    0% {
+
+        transform: translateY(-50px) rotate(0deg);
+
+        opacity: 0;
+
+    }
+
+    20% {
+
+        opacity: 1;
+
+    }
+
+    100% {
+
+        transform: translateY(110vh) rotate(360deg);
+
+        opacity: 0;
+
+    }
+
+}
+.hero .subtitle {
+
+    font-size: 13px;
+
+}
+
+.hero h1 {
+
+    font-size: 32px;
+
+}
+
+.hero .date {
+
+    font-size: 16px;
+
+}
+
+.hero h2 {
+
+    font-size: 22px;
+
+}
+
+.hero .message {
+
+    font-size: 15px;
+
+}
+
+.hero button {
+
+    font-size: 14px;
+
+    padding: 12px 24px;
+
+}
+
+.cover-image {
+
+    border: 4px solid #ffffff;
+
+    outline: 2px solid #d4af37;
+
+    border-radius: 18px;
+
+    box-shadow: 0 8px 25px rgba(212, 175, 55, 0.3);
+
+    transition: transform 0.4s ease;
+
+}
+
+.gallery {
+
+    padding: 60px 20px;
+
+    text-align: center;
+
+}
+
+.gallery h2 {
+
+    font-size: 32px;
+
+    color: #b8860b;
+
+    margin-bottom: 10px;
+
+}
+
+.gallery-subtitle {
+
+    color: #9b7180;
+
+    margin-bottom: 35px;
+
+}
+
+.gallery-container {
+
+    columns: 3 220px;
+
+    column-gap: 18px;
+
+    max-width: 1100px;
+
+    margin: auto;
+
+}
+
+.gallery-container img {
+
+    width: 100%;
+
+    height: auto;
+
+    display: block;
+
+    margin-bottom: 18px;
+
+    border-radius: 16px;
+
+    border: 3px solid #fff;
+
+    box-shadow: 0 5px 18px rgba(180, 140, 100, 0.2);
+
+    break-inside: avoid;
+
+    transition: transform 0.4s ease;
+
+}
+
+.gallery-container img:hover {
+
+    transform: scale(1.04);
+}
+
+
+
+.gallery {
+
+    max-width: 1200px;
+
+    margin: 60px auto;
+
+    padding: 50px 25px;
+
+    background: linear-gradient(
+
+        135deg,
+
+        #fff8fa,
+
+        #fffdf8,
+
+        #fff4f7
+
+    );
+
+    border-radius: 25px;
+
+    text-align: center;
+
+}
+
+/* Gallery Heading */
+
+.gallery h2 {
+
+    font-family: Georgia, serif;
+
+    font-size: 36px;
+
+    color: #b89558;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 15px;
+
+}
+
+.gallery h2::after {
+
+    content: "♥  ✧  ♥";
+
+    display: block;
+
+    font-size: 18px;
+
+    color: #d9c39a;
+
+    margin-top: 12px;
+
+}
+
+/* Gallery Subtitle */
+
+.gallery-subtitle {
+
+    color: #a56b7d;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+
+    margin-bottom: 35px;
+
+}
+
+/* Pinterest Masonry Layout */
+
+.gallery-container {
+
+    columns: 3 220px;
+
+    column-gap: 20px;
+
+    max-width: 1100px;
+
+    margin: auto;
+
+}
+
+/* Gallery Photos */
+
+.gallery-container img {
+
+    width: 100%;
+
+    height: auto;
+
+    display: block;
+
+    margin-bottom: 20px;
+
+    border: none;
+
+    outline: none;
+
+    border-radius: 18px;
+
+    box-shadow:
+
+        0 5px 18px rgba(230, 205, 150, 0.18);
+
+    break-inside: avoid;
+
+    transition: all 0.4s ease;
+
+}
+
+/* Photo Hover Effect */
+
+.gallery-container img:hover {
+
+    transform: translateY(-5px) scale(1.02);
+
+    box-shadow:
+
+        0 8px 25px rgba(230, 205, 150, 0.30);
+
+}
+
+/* Mobile Responsive */
+
+@media (max-width: 600px) {
+
+    .gallery {
+
+        padding: 35px 15px;
+
+        margin: 35px 10px;
+
+    }
+
+    .gallery h2 {
+
+        font-size: 27px;
+
+    }
+
+    .gallery-subtitle {
+
+        font-size: 14px;
+
+    }
+
+    .gallery-container {
+
+        columns: 2 140px;
+
+        column-gap: 12px;
+
+    }
+
+    .gallery-container img {
+
+        margin-bottom: 14px;
+
+        border-radius: 14px;
+
+    }
+
+}
+
+
+
+.love-message {
+
+    width: 100%;
+
+    padding: 70px 20px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background: linear-gradient(
+
+        135deg,
+
+        #fff8fa,
+
+        #fffdf8,
+
+        #fff3f6
+
+    );
+
+}
+
+.love-card {
+
+    width: 100%;
+
+    max-width: 750px;
+
+    padding: 50px 40px;
+
+    text-align: center;
+
+    background: #fffefa;
+
+    border-radius: 25px;
+
+    box-shadow: 0 10px 35px rgba(210, 180, 140, 0.18);
+
+}
+
+.dua-title {
+
+    color: #bd9b68;
+
+    font-size: 17px;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 20px;
+
+}
+
+.love-card h2 {
+
+    font-family: Georgia, serif;
+
+    font-size: 30px;
+
+    line-height: 1.5;
+
+    color: #a77b69;
+
+    margin-bottom: 25px;
+
+}
+
+.love-card p {
+
+    color: #78666a;
+
+    font-size: 16px;
+
+    line-height: 2;
+
+    margin-bottom: 20px;
+
+}
+
+.love-card h3 {
+
+    color: #b89558;
+
+    font-family: Georgia, serif;
+
+    font-size: 21px;
+
+    margin: 30px 0;
+
+}
+
+.forever-image {
+
+    width: 100%;
+
+    max-width: 350px;
+
+    height: auto;
+
+    border-radius: 20px;
+
+    box-shadow: 0 8px 25px rgba(230, 205, 150, 0.22);
+
+    margin: 20px auto;
+
+    display: block;
+
+}
+
+.love-card .forever-caption {
+
+    color: #b89558;
+
+    font-family: Georgia, serif;
+
+    font-size: 19px;
+
+    line-height: 1.8;
+
+    margin-top: 15px;
+
+}
+
+/* Mobile Design */
+
+@media (max-width: 600px) {
+
+    .love-card {
+
+        padding: 35px 20px;
+
+    }
+
+    .love-card h2 {
+
+        font-size: 24px;
+
+    }
+
+    .love-card p {
+
+        font-size: 14px;
+
+        line-height: 1.9;
+
+    }
+
+    .love-card h3 {
+
+        font-size: 18px;
+
+    }
+
+}
+
+
+/* Luxury Anniversary Music Button */
+
+#musicButton {
+
+    display: block;
+
+    margin: 30px auto;
+
+    padding: 15px 35px;
+
+    background: linear-gradient(
+
+        135deg,
+
+        #e8b8c8,
+
+        #d4af70,
+
+        #e8b8c8
+
+    );
+
+    color: white;
+
+    border: 1px solid #d4af70;
+
+    border-radius: 50px;
+
+    font-family: Georgia, serif;
+
+    font-size: 16px;
+
+    letter-spacing: 1px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    box-shadow:
+
+        0 5px 20px rgba(212, 175, 112, 0.3);
+
+    transition: all 0.4s ease;
+
+}
+
+/* Hover Animation */
+
+#musicButton:hover {
+
+    transform: translateY(-4px) scale(1.05);
+
+    box-shadow:
+
+        0 10px 30px rgba(212, 175, 112, 0.5);
+
+    background: linear-gradient(
+
+        135deg,
+
+        #d4af70,
+
+        #e8b8c8
+
+    );
+
+}
+
+/* Click Effect */
+
+#musicButton:active {
+
+    transform: scale(0.95);
+
+}
+
+
+
+
+
+/* Beautiful Surprise Animation */
+
+.surprise-hearts {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    font-size: 45px;
+    margin: 25px 0;
+}
+
+.surprise-hearts span {
+    display: inline-block;
+    animation: heartPop 1.2s ease infinite alternate;
+}
+
+.surprise-hearts span:nth-child(2) {
+    animation-delay: 0.3s;
+}
+
+.surprise-hearts span:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+@keyframes heartPop {
+    from {
+        transform: scale(0.8) translateY(0);
+    }
+    to {
+        transform: scale(1.3) translateY(-12px);
+    }
+}
+
+#surprise h2 {
+    color: #b89558;
+    font-family: Georgia, serif;
+}
+
+#surprise p {
+    color: #a56b7d;
+    font-size: 17px;
+}
+
+
+/* Luxury Wedding Album Cover */
+
+.album-intro {
+
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 10000;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background: linear-gradient(
+
+        135deg,
+
+        #fffaf0,
+
+        #f5eee3,
+
+        #fffdf8
+
+    );
+
+    padding: 20px;
+
+}
+
+.album-cover {
+
+    position: relative;
+
+    width: 100%;
+
+    max-width: 450px;
+
+    height: 600px;
+
+    overflow: hidden;
+
+    border: 8px solid #f2e8d8;
+
+    border-radius: 12px;
+
+    box-shadow: 0 15px 45px rgba(120, 80, 50, 0.35);
+
+}
+
+.album-cover img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+}
+
+.album-text {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    padding-bottom: 25px;
+    background: linear-gradient(
+        to bottom,
+        transparent 60%,
+        rgba(40, 20, 25, 0.75) 100%
+    );
+}
+
+.album-text h1 {
+
+    color: #e6c58b;
+
+    font-family: Georgia, serif;
+
+    line-height: 1.5;
+
+    text-shadow: 2px 3px 8px #000;
+
+    font-family: 'Great Vibes', cursive;
+
+font-size: 38px;
+
+}
+
+.album-text p {
+
+    color: #d4b77c;
+
+    font-size: 16px;
+
+    margin: 20px 0;
+    margin: 8px 0;
+
+}
+
+.album-text button {
+    padding: 10px 22px;
+    border: 1px solid #d4af70;
+    border-radius: 30px;
+    background: linear-gradient(135deg, #d4af70, #f5d9a6);
+    color: #65452b;
+    font-size: 13px;
+    font-family: Georgia, serif;
+    font-weight: normal;
+    cursor: pointer;
+    display: inline-block;
+    width: auto;
+    height: auto;
+    margin-top: 5px;
+}
+
+@media (max-width: 600px) {
+
+    .album-cover {
+
+        height: 520px;
+
+    }
+
+    .album-text h1 {
+
+        font-size: 27px;
+        color: #f0d9a6;
+        margin-bottom: 8px;
+
+    }
+
+}
+
+
+/* 3D Album Opening Animation */
+
+.album-cover {
+    transform-origin: left center;
+    transition: transform 1.5s ease-in-out;
+    perspective: 1500px;
+}
+
+.album-opening .album-cover {
+    transform: perspective(1500px) rotateY(-110deg);
+    opacity: 0.3;
+}
+
+.album-opening {
+    transition: opacity 1.5s ease;
+    opacity: 0;
+}
+
+
+
+
+/* Luxury Wedding Video Section */
+.wedding-video {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 45px 25px;
+    text-align: center;
+    background: linear-gradient(135deg, #fff8fa, #fffdf8, #fff3f6);
+    border-radius: 25px;
+}
+
+.wedding-video h2 {
+    font-family: Georgia, serif;
+    font-size: 32px;
+    color: #b89558;
+    margin-bottom: 15px;
+}
+
+.wedding-video p {
+    color: #a56b7d;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.wedding-video video {
+    width: 85%;
+    max-width: 550px;
+    max-height: 350px;
+    border: 4px solid #d4af70;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(212,175,112,0.25);
+}
+
+@media (max-width: 600px) {
+    .wedding-video h2 {
+        font-size: 25px;
+    }
+}
+
+/* Luxury Wedding Doodles & Words */
+
+.wedding-doodles {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100vh;
+    pointer-events: none;
+    z-index: 5;
+    overflow: hidden;
+}
+
+.wedding-doodles span {
+    position: absolute;
+    color: #c9a45c;
+    font-size: 27px;
+    opacity: 0.65;
+    text-shadow: 0 0 8px rgba(212,175,112,0.3);
+    animation: gentleFloat 4s ease-in-out infinite alternate;
+}
+
+.wedding-doodles span::after {
+    display: block;
+    font-family: Georgia, serif;
+    font-size: 10px;
+    letter-spacing: 1px;
+    color: #b89558;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.wedding-doodles span:nth-child(1) {
+    top: 12%;
+    left: 5%;
+}
+.wedding-doodles span:nth-child(1)::after {
+    content: "Forever";
+}
+
+.wedding-doodles span:nth-child(2) {
+    top: 30%;
+    right: 6%;
+}
+.wedding-doodles span:nth-child(2)::after {
+    content: "Love";
+}
+
+.wedding-doodles span:nth-child(3) {
+    top: 50%;
+    left: 4%;
+}
+.wedding-doodles span:nth-child(3)::after {
+    content: "Together";
+}
+
+.wedding-doodles span:nth-child(4) {
+    top: 70%;
+    right: 5%;
+}
+.wedding-doodles span:nth-child(4)::after {
+    content: "Always";
+}
+
+.wedding-doodles span:nth-child(5) {
+    top: 85%;
+    left: 12%;
+}
+.wedding-doodles span:nth-child(5)::after {
+    content: "Memories";
+}
+
+.wedding-doodles span:nth-child(6) {
+    top: 18%;
+    right: 15%;
+}
+.wedding-doodles span:nth-child(6)::after {
+    content: "Soulmates";
+}
+
+.wedding-doodles span:nth-child(7) {
+    top: 92%;
+    right: 15%;
+}
+.wedding-doodles span:nth-child(7)::after {
+    content: "Forever Us";
+}
+
+.wedding-doodles span:nth-child(8) {
+    top: 60%;
+    right: 12%;
+}
+.wedding-doodles span:nth-child(8)::after {
+    content: "Endless Love";
+}
+
+
+    @keyframes gentleFloat {
+
+    from {
+
+        transform: translateY(0);
+
+    }
+
+    to {
+
+        transform: translateY(-8px);
+
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .wedding-doodles span {
+
+        font-size: 20px;
+
+        opacity: 0.45;
+
+    }
+
+    .wedding-doodles span::after {
+
+        font-size: 8px;
+
+    }
+
+}
+
+
+
+@keyframes gentleFloat {
+
+    from {
+
+        transform: translateY(0);
+
+    }
+
+    to {
+
+        transform: translateY(-8px);
+
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .wedding-doodles span {
+
+        font-size: 20px;
+
+        opacity: 0.45;
+
+    }
+
+    .wedding-doodles span::after {
+
+        font-size: 8px;
+
+    }
+
+}
+
+
+
+/* Six Luxury Greeting Envelopes */
+
+.envelope-section {
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 50px 20px;
+    text-align: center;
+    background: linear-gradient(135deg, #fff5f7, #fffdf8);
+    border-radius: 25px;
+}
+
+.envelope-section h2 {
+    font-family: Georgia, serif;
+    color: #b89558;
+    font-size: 34px;
+    margin-bottom: 15px;
+}
+
+.envelope-section p {
+    color: #a56b7d;
+    font-size: 16px;
+}
+
+.envelope-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 45px 25px;
+    max-width: 900px;
+    margin: 50px auto;
+}
+
+.message-envelope {
+    position: relative;
+    height: 180px;
+    background: linear-gradient(135deg, #f7dce6, #fff0f5);
+    border: 2px solid #d4af70;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(180,130,120,0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.message-envelope::before {
+    content: "♥";
+    color: #c58b9e;
+    font-size: 35px;
+}
+
+.envelope-message {
+    position: absolute;
+    bottom: 10px;
+    width: 90%;
+    color: #a56b7d;
+    font-family: Georgia, serif;
+    font-size: 14px;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .envelope-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px 15px;
+    }
+
+    .message-envelope {
+        height: 145px;
+    }
+
+    .envelope-section h2 {
+
+        font-size: 25px;
+    }
+}
+
+
+
+
+
+/* Magical Envelope Opening Animation */
+
+.message-envelope {
+    perspective: 1000px;
+    overflow: visible;
+}
+
+.message-envelope::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, #e8bfd0, #f9e1e9);
+    clip-path: polygon(0 0, 100% 0, 50% 65%);
+    transform-origin: top;
+    transition: transform 1.2s ease;
+    z-index: 3;
+}
+
+.envelope-message {
+    opacity: 0;
+    transform: translateY(25px);
+    transition: all 1s ease;
+    z-index: 4;
+}
+
+.message-envelope.open::after {
+    transform: rotateX(180deg);
+}
+
+.message-envelope.open .envelope-message {
+    opacity: 1;
+    transform: translateY(-20px);
+}
+
+
